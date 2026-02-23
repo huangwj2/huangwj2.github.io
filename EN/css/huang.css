@@ -84,3 +84,61 @@ a:active {
   right: -0.5rem;
   border: 0.25rem solid rgba(255, 255, 255, 0.85);
 }
+
+.lang-switch-top {
+  position: fixed;
+  top: 0.95rem;
+  left: 1rem;
+  z-index: 11000;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(47, 23, 15, 0.86);
+  border: 1px solid rgba(246, 225, 197, 0.45);
+  border-radius: 999px;
+  padding: 0.34rem 0.5rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+}
+
+.lang-switch-top .lang-pill {
+  display: inline-block;
+  min-width: 2.2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  padding: 0.22rem 0.58rem;
+  line-height: 1.1;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lang-switch-top .lang-pill:hover,
+.lang-switch-top .lang-pill:focus {
+  text-decoration: none;
+  color: #2f170f !important;
+  border-color: #f6e1c5;
+  background: #f6e1c5;
+}
+
+.lang-switch-top .lang-pill.active {
+  color: #2f170f !important;
+  border-color: #e6a756;
+  background: #e6a756;
+}
+
+@media (max-width: 991.98px) {
+  .lang-switch-top {
+    top: 0.7rem;
+    left: 0.7rem;
+    padding: 0.28rem 0.42rem;
+  }
+
+  .lang-switch-top .lang-pill {
+    min-width: 2rem;
+    font-size: 0.78rem;
+  }
+}
